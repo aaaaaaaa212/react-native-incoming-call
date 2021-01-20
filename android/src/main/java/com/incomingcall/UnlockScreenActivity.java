@@ -99,7 +99,7 @@ public class UnlockScreenActivity extends AppCompatActivity implements UnlockScr
                 try {
                     v.cancel();
                     player.stop();
-                    dismissDialing();
+                    acceptDialing();
                 } catch (Exception e) {
                     WritableMap params = Arguments.createMap();
                     params.putString("message", e.getMessage());
