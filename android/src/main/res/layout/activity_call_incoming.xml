@@ -99,7 +99,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/icVcEnd"
+                android:src="@drawable/ic_vc_end"
             />
             <TextView
                 android:id="@+id/tvDecline"
@@ -127,7 +127,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/icVcCall"
+                android:src="@drawable/ic_vc_call"
             />
             <TextView
                 android:id="@+id/tvAccept"
