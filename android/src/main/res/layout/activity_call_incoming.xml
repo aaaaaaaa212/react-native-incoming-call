@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/background"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     >
 
     <LinearLayout
@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:gravity="center_horizontal"
@@ -23,8 +23,8 @@
         >
             <ImageView
                 android:id="@+id/ivAvatar"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:scaleType="fitXY"
                 android:layout_marginTop="40dp"
                 android:src="@drawable/img_default_profile"
@@ -59,9 +59,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:textSize="22sp"
+            android:textSize="25sp"
             android:fontFamily="sans-serif"
-            android:textColor="#ADADAD"
+            android:textColor="#ffffff"
+            android:text="노원상"
+            android:textStyle="bold"
         />
 
         <TextView
@@ -71,7 +73,8 @@
             android:layout_marginTop="10dp"
             android:textSize="14sp"
             android:fontFamily="sans-serif"
-            android:textColor="#ADADAD"
+            android:textColor="#ffffff"
+            android:text="Mobile 8008"
         />
 
     </LinearLayout>
@@ -108,7 +111,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif"
-                android:textColor="#ADADAD"
+                android:textColor="#ffffff"
                 android:text="@string/decline"
                 android:gravity="center"
             />
@@ -136,7 +139,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif"
-                android:textColor="#ADADAD"
+                android:textColor="#ffffff"
                 android:text="@string/accept"
                 android:gravity="center"
             />

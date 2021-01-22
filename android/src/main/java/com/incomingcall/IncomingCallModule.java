@@ -1,5 +1,6 @@
 package com.incomingcall;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
@@ -36,6 +37,7 @@ public class IncomingCallModule extends ReactContextBaseJavaModule {
         return "IncomingCall";
     }
 
+    @SuppressLint("WrongConstant")
     @ReactMethod
     public void display(String uuid, String name, String avatar, String info, int timeout) {
         if (UnlockScreenActivity.active) {
@@ -98,6 +100,7 @@ public class IncomingCallModule extends ReactContextBaseJavaModule {
         }
     }
 
+    @SuppressLint("WrongConstant")
     @ReactMethod
     public void openAppFromHeadlessMode(String uuid) {
         Context context = getAppContext();
