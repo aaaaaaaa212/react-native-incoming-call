@@ -62,7 +62,6 @@
             android:textSize="25sp"
             android:fontFamily="sans-serif"
             android:textColor="#ffffff"
-            android:text="노원상"
             android:textStyle="bold"
         />
 
@@ -74,7 +73,6 @@
             android:textSize="14sp"
             android:fontFamily="sans-serif"
             android:textColor="#ffffff"
-            android:text="Mobile 8008"
         />
 
     </LinearLayout>
