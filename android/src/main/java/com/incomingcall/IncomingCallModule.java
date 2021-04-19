@@ -2,6 +2,7 @@ package com.incomingcall;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.WindowManager;
@@ -88,6 +89,11 @@ public class IncomingCallModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void backToForeground() {
         Context context = getAppContext();
+
+
+        PackageManager packageManager = context.getPackageManager();
+        Intent intent = packageManager.getLaunchIntentForPackage("com.wehago.one");
+
         String packageName = context.getApplicationContext().getPackageName();
         Intent focusIntent = context.getPackageManager().getLaunchIntentForPackage(packageName).cloneFilter();
         Activity activity = getCurrentActivity();
