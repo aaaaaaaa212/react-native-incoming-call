@@ -88,12 +88,8 @@ public class IncomingCallModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void backToForeground() {
+        
         Context context = getAppContext();
-
-
-        PackageManager packageManager = context.getPackageManager();
-        Intent intent = packageManager.getLaunchIntentForPackage("com.wehago.one");
-
         String packageName = context.getApplicationContext().getPackageName();
         Intent focusIntent = context.getPackageManager().getLaunchIntentForPackage(packageName).cloneFilter();
         Activity activity = getCurrentActivity();
